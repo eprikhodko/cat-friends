@@ -7,7 +7,7 @@ import ContactCard from "./ContactCard"
 
 function App() {
 
-  const contactComponents = contactsData.map(contact => <ContactCard key={contact.id} name={contact.name} imgUrl={contact.imgUrl} phone={contact.phone} email={contact.email}/>)
+  const contactComponents = contactsData.map(contact => <ContactCard key={contact.id} contactInfo={contact}/>)
 
   return (
     <div className="App">
