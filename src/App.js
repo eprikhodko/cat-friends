@@ -1,23 +1,21 @@
 
-import './App.css';
+// import './App.css';
+import ContactCard from "./ContactCard"
+import Header from "./Header"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+
+      <ContactCard 
+        name="Mr. Whiskerson" 
+        imgUrl="http://placekitten.com/300/200" 
+        phone="(212) 555-1234" 
+        email="mr.whiskaz@catnap.meow"
+      />
+
+      <ContactCard />
     </div>
   );
 }
