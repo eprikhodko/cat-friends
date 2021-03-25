@@ -22,49 +22,49 @@ const contactsData = [
     },
     {
         id: 4,
-        name: "Felix", 
+        name: "Musya", 
         imgUrl: "http://placekitten.com/350/353", 
         phone: "(212) 555-4567", 
         email: "thecat@hotmail.com"
     },
     {
         id: 5,
-        name: "Felix", 
+        name: "Chernysh", 
         imgUrl: "http://placekitten.com/350/354", 
         phone: "(212) 555-4567", 
         email: "thecat@hotmail.com"
     },
     {
         id: 6,
-        name: "Felix", 
+        name: "Silva", 
         imgUrl: "http://placekitten.com/350/355", 
         phone: "(212) 555-4567", 
         email: "thecat@hotmail.com"
     },
     {
         id: 7,
-        name: "Felix", 
+        name: "Boris", 
         imgUrl: "http://placekitten.com/350/356", 
         phone: "(212) 555-4567", 
         email: "thecat@hotmail.com"
     },
     {
         id: 8,
-        name: "Felix", 
+        name: "Stinky", 
         imgUrl: "http://placekitten.com/350/357", 
         phone: "(212) 555-4567", 
         email: "thecat@hotmail.com"
     },
     {
         id: 9,
-        name: "Felix", 
+        name: "Donat", 
         imgUrl: "http://placekitten.com/350/358", 
         phone: "(212) 555-4567", 
         email: "thecat@hotmail.com"
     },
     {
         id: 10,
-        name: "Felix", 
+        name: "Ksks", 
         imgUrl: "http://placekitten.com/350/359", 
         phone: "(212) 555-4567", 
         email: "thecat@hotmail.com"

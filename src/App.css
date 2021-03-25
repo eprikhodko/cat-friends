@@ -1,53 +1,40 @@
-.App {
-  /* text-align: center; */
-}
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 4rem;
+  color: rgb(128, 128, 128);
+  margin: 0;
 }
 
 .header {
   text-align: center;
-  background-color: brown;
-}
-
-/* Layout */
-
-.App {
-  background-color: gray;
-  border: 1px solid black;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.contact-card {
-  /* border: 1px solid magenta; */
-  margin: 1em;
+  background-color: rgb(206, 206, 206);
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding: 2em 0 2.3em;
 }
 
 .contact-components {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 1em;
-
   max-width: 90%;
   margin: 0 auto;
-  background-color: #fff;
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 1.5em;
 }
 
 .contact-card {
-  background-color: burlywood;
+  text-align: center;
   margin: 0;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.308);
+  background-color: rgb(206, 206, 206);
 }
 
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.07); }
+
 .contact-card-image {
-  max-width: 100%;
+  margin-top: 1.5em;
+  max-width: 50%;
+  border-radius: 200px;
 }
