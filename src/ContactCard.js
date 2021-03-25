@@ -1,7 +1,6 @@
 import React from "react"
 
 function ContactCard(props) {
-    console.log(props.contact)
     return(
         <div className="contact-card grow">
             <img className="contact-card-image" src={props.contactInfo.imgUrl} alt="kitten"/>

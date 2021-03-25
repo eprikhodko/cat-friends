@@ -3,33 +3,36 @@ import './App.css';
 import Header from "./Header"
 import contactsData from "./contactsData"
 import ContactCard from "./ContactCard"
-import React from 'react';
+import React, {useState} from 'react'
 
 
-class App extends React.Component {
-  constructor() {
-    super()
-    this.state={
-      isLoading: true
-    }
-  }
+function App() {
+  // constructor() {
+  //   super()
+  //   this.state={
+  //     isLoading: true
+  //   }
+  // }
 
-  componentDidMount() {
-    setTimeout(() => {
-      this.setState({
-        isLoading: false
-      })
-    }, 1500);
-  }
+  // componentDidMount() {
+  //   setTimeout(() => {
+  //     this.setState({
+  //       isLoading: false
+  //     })
+  //   }, 1500);
+  // }
 
-  render() {
+// here we're set our state with useState Hook.
+    const [ isLoading ] = useState(false)
+  
     const contactComponents = contactsData.map(contact => <ContactCard key={contact.id} contactInfo={contact}/>)
 
     return (
     <div className="App">
+
       <Header />
 
-      {this.state.isLoading ? 
+      {isLoading ? 
       <h2 style={{textAlign: "center", fontSize: "2em"}}>Loading...</h2> : 
       <div className="contact-components">
        {contactComponents}
@@ -38,7 +41,7 @@ class App extends React.Component {
 
     </div>
   );
-  }
+  
 }
 
 export default App;
