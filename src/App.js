@@ -23,20 +23,26 @@ function App() {
   // }
 
 // here we're set our state with useState Hook.
-    const [ isLoading ] = useState(false)
-  
+    const [areCatsVisible, showCats] = useState(false)
+    
     const contactComponents = contactsData.map(contact => <ContactCard key={contact.id} contactInfo={contact}/>)
+
+    const handleClick = () => {
+      showCats(true)
+    }
 
     return (
     <div className="App">
 
       <Header />
 
-      {isLoading ? 
-      <h2 style={{textAlign: "center", fontSize: "2em"}}>Loading...</h2> : 
+      {areCatsVisible ? 
       <div className="contact-components">
-       {contactComponents}
-      </div>
+      {contactComponents}
+     </div> :
+      // <h2 style={{textAlign: "center", fontSize: "2em"}}>Loading...</h2>
+      <button type="button" onClick={handleClick} style={{fontSize: "2em"}}>Show Cats</button>
+      
       }
 
     </div>
