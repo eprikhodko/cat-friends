@@ -5,6 +5,8 @@ import contactsData from "./contactsData"
 import ContactCard from "./ContactCard"
 import React, {useState} from 'react'
 
+import Form from "./Form"
+
 
 function App() {
   // constructor() {
@@ -35,6 +37,7 @@ function App() {
     <div className="App">
 
       <Header />
+      <Form />
 
       {areCatsVisible ? 
       <div className="contact-components">
