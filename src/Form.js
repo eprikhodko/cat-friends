@@ -10,11 +10,18 @@ function Form() {
     const [contactsData, setContactsData] = useState([])
 
     function handleChange(event) {
-        
+        // destructuring 
+        const {name, value} = event.target
+        setInputData(prevInputData => {
+            return {
+                ...prevInputData,
+                [name]: value
+            }
+        })
     }
 
     function handleSubmit(event) {
-
+        // add the inputData to the contactsData array
     }
 
         return (
