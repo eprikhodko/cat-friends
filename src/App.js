@@ -44,7 +44,7 @@ function App() {
       {contactComponents}
      </div> :
       // <h2 style={{textAlign: "center", fontSize: "2em"}}>Loading...</h2>
-      <button type="button" onClick={handleClick} style={{fontSize: "2em"}}>Show Cats</button>
+      <button type="button" onClick={handleClick} style={{fontSize: "2em", marginTop: "20em"}}>Show Cats</button>
       
       }
 

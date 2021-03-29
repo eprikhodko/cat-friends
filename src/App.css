@@ -38,3 +38,17 @@ h1 {
   max-width: 50%;
   border-radius: 200px;
 }
+
+/* Form */
+
+.form {
+  max-width: 30%;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 2em 2em;
+}
+
+.form input {
+  margin-bottom: .5em;
+}
