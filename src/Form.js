@@ -5,7 +5,7 @@ function Form() {
     
     const [inputData, setInputData] = useState({
         name: "",
-        photo: "",
+        imgUrl: "http://placekitten.com/350/352",
         phone: "",
         email: ""
     })

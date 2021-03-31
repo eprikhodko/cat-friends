@@ -7,7 +7,6 @@ function ContactCard(props) {
             <h3>{props.contactInfo.name}</h3>
             <p>Phone: {props.contactInfo.phone}</p>
             <p>Email: {props.contactInfo.email}</p>
-            <p>test input form: {props.contactInfo.test}</p>
         </div>
     )
 }
